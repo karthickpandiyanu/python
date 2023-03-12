@@ -1,0 +1,23 @@
+#CLASS NAME SHOULD START WITH CAPITAL LETTERS
+class RandomNumber:
+
+    #FUNCTION NAME SHOULD START WITH SMALL CHARACTER
+    def generate_random_number(self):
+
+        #RANDOM NUMBERS CAN BE GENERATED USING "RANDOM.RANDOM()" FUNCTION
+        number = str((random.random() * (15000 - 1000) + 1000))
+        print(number)
+        #print(f'{number:.2f} ')
+        today = datetime.now()
+        print(today)
+        #formatting date time
+        instance = str(today.strftime("%Y%m%d%H%M%S"))
+        print(instance)
+        combine = int(float(instance + number))
+        print(combine)
+
+#INITIALIZING THE CLASS
+intialize = RandomNumber()
+
+#CALLING CLASS AND ITS METHOD
+intialize.generate_random_number()
