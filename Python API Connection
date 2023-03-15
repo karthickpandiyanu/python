@@ -1,0 +1,28 @@
+import requests
+from requests.auth import HTTPBasicAuth
+import pandas as pd
+import json
+from datetime import date
+from datetime import dateime
+import io
+from pandas.io.json import json_normalize
+import webbrowser
+
+print("IP address", len(ip))
+for each in ip:
+  print("IP address", each)
+  snpdt = "datetime'2022-10-30T00:00:00'"
+  ldgtyp = "'0L'"
+  enitity = "'1024'"
+  service_url = f" "https://{}:
+  print(service_url)
+  webbrowser.open(service_url, new=2)
+  print("for ip address of each", each)
+  response = request.get(service_url, verify = false, header={"Prefer": "odata.maxpagesize=500", "Prefer":"odata.track-changes"})
+  print("Response Code is :", response)
+  
+  if response.status_code == 200:
+    print("Connection Successfull")
+    init_json = json.loads(response.txt)
+  else:
+    print("Connection not successfull")
