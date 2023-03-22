@@ -1,0 +1,34 @@
+#Read data from files
+#Convert into collection
+#Perform collection operation to preview the data
+#Run Map reduce operation
+
+#Reading data from files
+#preview data in linux using - 
+  tail filename
+
+#To read file we have API called 
+  open(Validpath, read/write or buffer)
+
+#To know syntax better 
+  help(open)
+  orderitemfile = open("path","r")
+  type(file)
+
+
+def open_file():
+  openItemsFile = open("path/filename", "r") #open the file in read only mode, it returns the type as "file" to see API for help(file)
+  openItemsRead = openItems.read() #Read will return as string, type(openItemRead) -> return string one big string, we have to get the string of records to collections
+  #help(str)
+ openItemsLines - openItemsRead.splitlines() #
+  
+  #filter
+  #filter data from specific column in collection of list
+  openItemsFilter = filter(lambda x: int(x.split(",")[1]) == 68880, openItemsLines)
+  
+  #map maps the each record in collection
+  #openItemsMap = map(lambda y: float(y.split(",")[4]), openItemsFilter)
+  
+  #reduce this sums up the value
+  openItemsReduce = reduce(total , element : total + element, openItemsMap)
+  
