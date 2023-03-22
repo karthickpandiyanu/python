@@ -1,0 +1,24 @@
+Object Oriented Programing
+--------------------------
+
+Class NameOfClass(): #Object are also called as class, First letter capital, Camel case
+
+	def__init__(self, par1, par2): create as instance for the object
+		self.parm
+		self.parm2
+		
+	def some_mmethod(self):
+		#functions
+		print(self.param1)
+		
+Class is blue print, 
+
+	class Dog():
+		
+		def __init__(self, mybreed) #creating __init__ means create instance for the object and self keyword is used to point the variable for that, Constrctor for class, self 
+		
+		self.breed = mybreed
+		pass - doesnt do anything just passes
+		my_dog = Dog()
+		my_sample = Sample()
+		type(my_sample) - __Main__ .Sample
